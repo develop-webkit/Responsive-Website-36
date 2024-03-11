@@ -1,0 +1,766 @@
+@font-face {
+    font-family: 'VCRosdNEUE';
+    src: url(../fonts/VCRosdNEUE.ttf);
+}
+
+body,
+html {
+    margin: 0;
+    font-size: 16px;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+input:focus,
+button:focus,
+textarea:focus {
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-sec {
+    background-image: url(../images/main-bg.png);
+    background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-size: 1vw;
+    position: relative;
+}
+
+.main-sec::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000000CC;
+}
+
+.nav-sec {
+    background: #FFFFFF0D;
+    position: relative;
+    z-index: 9;
+}
+
+.nav-sec::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../images/RedHighlight.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    width: 100%;
+    height: 40em;
+}
+
+.nav-logo {
+    padding: 0.75em 0.75em;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 9;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, #fff, #fff, #fff) 1;
+    border-image-source: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 52.6%, rgba(255, 255, 255, 0) 100%);
+}
+
+.nav-logo a img {
+    width: 5em;
+}
+
+.d-col-6 {
+    width: 53%;
+}
+
+.hero-col-one {
+    background-image: url(../images/heroborder.png);
+    background-size: contain;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 999;
+    overflow: hidden;
+    padding: 1.5em 1.65em 1.5em 1.65em;
+    min-height: 53.5em;
+}
+
+.hero-col-one-inner {
+    position: relative;
+    z-index: 9999;
+    padding: 1em 1.125em;
+}
+
+.hero-col-one-inner::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(41, 8, 15, 0.64) 0%, rgba(41, 8, 15, 0.28) 100%);
+    display: none;
+}
+
+.hero-form {
+    border: 1px solid #FFFFFF29;
+    background: #FFFFFF0D;
+    padding: 1em;
+    position: relative;
+    z-index: 999;
+    border-radius: 1em;
+}
+
+.input-one {
+    display: flex;
+    align-items: self-start;
+    flex-direction: column;
+    gap: 0.25em;
+    width: 100%;
+}
+
+.input-one label {
+    font-size: 0.875em;
+    font-weight: 400;
+    color: #fff;
+}
+
+.input-one input {
+    border: 1px solid #FFFFFF29;
+    width: 100%;
+    background: #FFFFFF0D;
+    min-height: 3.875em;
+    border-radius: 0.563em;
+    padding: 0.5em 1.125em;
+    font-size: 0.75em;
+    font-weight: 400;
+    color: #ccc;
+    transition: .3s;
+}
+.main-sec{
+    overflow: hidden;
+}
+.input-one input:hover {
+    border: 1px solid #F53C3E
+}
+
+.input-one input::placeholder {
+    color: #ccc;
+}
+
+.form-col {
+    display: flex;
+    align-items: self-start;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5em;
+}
+
+.setting-col {
+    position: relative;
+    z-index: 999;
+}
+
+.mode-col {
+    margin-top: 0.875em;
+}
+
+.mode-col p {
+    margin: 0;
+    font-size: 1.125em;
+    font-weight: 500;
+    color: #fff;
+}
+
+.mode-inner {
+    display: flex;
+    align-items: center;
+    gap: 0.875em;
+    margin-top: 0.875em;
+}
+
+.s-btn {
+    width: 100%;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 22.12%, rgba(255, 255, 255, 0) 48.96%, rgba(255, 255, 255, 0) 81.07%, rgba(255, 255, 255, 0.3) 98%);
+    border: 1px solid #FFFFFF33;
+    border-radius: 0.625em;
+    min-height: 2.75em;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    transition: .3s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25em;
+}
+
+.s-btn:hover {
+    background: linear-gradient(0deg, rgba(245, 60, 62, 0.3) 0%, rgba(245, 60, 62, 0) 22.12%, rgba(245, 60, 62, 0) 48.96%, rgba(245, 60, 62, 0) 81.07%, rgba(245, 60, 62, 0.3) 98%),
+        linear-gradient(0deg, rgba(245, 60, 62, 0.3), rgba(245, 60, 62, 0.3));
+    border: 1px solid #F53C3E
+}
+
+.s-btn.active {
+    background: linear-gradient(0deg, rgba(245, 60, 62, 0.3) 0%, rgba(245, 60, 62, 0) 22.12%, rgba(245, 60, 62, 0) 48.96%, rgba(245, 60, 62, 0) 81.07%, rgba(245, 60, 62, 0.3) 98%),
+        linear-gradient(0deg, rgba(245, 60, 62, 0.3), rgba(245, 60, 62, 0.3));
+    border: 1px solid #F53C3E
+}
+
+.s-btn img {
+    width: 1em;
+}
+
+.hero-sec {
+    padding: 1.5em 6em;
+}
+
+.hero-d-col {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.d-col-5 {
+    width: 47%;
+}
+
+.hero-col-two {
+    position: relative;
+    z-index: 999;
+    text-align: center;
+}
+
+.hero-col-two::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    bottom: -6.45em;
+    background-image: url(../images/under-d-btn.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    width: 100%;
+    height: 15em;
+}
+
+.hero-col-man {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.under-fightman {
+    margin-top: -22.75em;
+    width: 24.438em;
+}
+
+.fight-man-one {
+    width: 38em;
+    position: relative;
+    z-index: 9;
+}
+
+.dd-btn-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+    position: relative;
+    z-index: 9;
+}
+
+.d-btn {
+    background-image: url(../images/d-btn.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 0;
+    background-size: 100% 100%;
+    background-position: 100% 100%;
+    height: 2.125em;
+    padding: 0.375em 0.5em 0em;
+    color: #fff;
+    gap: 0.25em;
+    font-size: 1.75em;
+    font-weight: 500;
+    font-family: 'VCRosdNEUE';
+    cursor: pointer;
+    width: 8.125em;
+}
+
+.d-btn img {
+    width: 0.875em;
+    margin-top: -0.125em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.game-hero-sec {
+    position: relative;
+    z-index: 999;
+}
+
+.game-time-col {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+    width: 100%;
+    padding: 1.5em 8em;
+    justify-content: center;
+    position: relative;
+    z-index: 99999;
+}
+
+.game-time-inner1x {
+    background-image: url(../images/healthbar.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    height: 4em;
+    width: 25em;
+    padding: 1.5em;
+}
+
+.game-time-inner-percentage {
+    background: linear-gradient(180deg, #CD2C2E 0%, #871011 100%);
+    display: flex;
+    width: 82%;
+    justify-content: end;
+    padding: 0.25em;
+    padding-right: 0.5em;
+    margin-top: 0.1em;
+}
+
+.game-time-inner-percentage span {
+    font-size: 0.85em;
+    font-weight: 600;
+    line-height: 1.25;
+    color: #fff;
+}
+
+.game-time-inner2x {
+    background-image: url(../images/Timer.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 9em;
+    width: 25em;
+    padding: 1em;
+}
+
+.game-time-inner-clock {
+    padding-top: 1em;
+}
+
+.game-time-inner-clock span {
+    font-family: VCRosdNEUE;
+    font-size: 3em;
+    font-weight: 500;
+    color: #fff;
+}
+
+.game-table-one {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 1em 0em 8em 0em;
+}
+
+.game-table-inner1x {
+    width: 25%;
+}
+
+.game-table-inner1x .hero-col-two::after {
+    background-image: url(../images/red-one.png);
+    bottom: -9em;
+    left: 0;
+    right: initial;
+}
+
+.game-table-inner1x .under-fightman {
+    margin-top: -19em;
+}
+
+.game-table-inner1x .hero-col-two::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    background-image: url(../images/red-two.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    width: 100%;
+    height: 100em;
+}
+
+.game-table-inner2x {
+    width: 50%;
+}
+
+.game-table-content {
+    background-image: url(../images/Statistics.png);
+    background-size: contain;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 999;
+    overflow: hidden;
+    min-height: 34em;
+    padding: 4.25em 3.5em 3.5em 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.75em;
+}
+
+.stat-one {
+    background: #FFFFFF1A;
+    border: 1px solid #FFFFFF4D;
+    border-radius: 0.688em;
+    padding: 0.25em;
+    width: 100%;
+}
+
+.stat-one-inner {
+    background: #FFFFFF0D;
+    border-radius: 0.563em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.125em 1.5em 0.125em 0.125em;
+}
+
+.stat-one-inner h6 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #fff;
+}
+
+.stat-one-inner h6 img {
+    width: 3.25em;
+}
+
+.stat-one-inner p {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #fff;
+}
+
+.game-table-inner3x .hero-col-two::after {
+    background-image: url(../images/red-three.png);
+    bottom: -9em;
+    left: initial;
+    right: 0;
+}
+
+.game-table-inner3x .hero-col-two::before {
+    right: 0;
+    left: initial;
+    background-image: url(../images/red-four.png);
+}
+
+.game-table-inner1x .fight-man-one {
+    width: 22em;
+}
+
+.game-table-inner3x .under-fightman {
+    margin-top: -14em;
+}
+
+.game-table-inner3x .fight-man-one {
+    width: 25em;
+    bottom: -5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.winwin-inner {
+    background-image: url(../images/winwin.png);
+    height: 7em;
+    width: 21em;
+}
+
+.winwin-hero-sec {
+    padding: 0 6em;
+}
+
+.winwin-hero-sec .game-table-content {
+    padding: 6.5em 2.75em 1.75em 2.75em;
+    gap: 0.5em;
+    width: 100%;
+}
+
+.winwin-hero-sec .game-table-one {
+    padding: 0em 0em 3em 0em;
+    align-items: end;
+}
+
+.winwin-hero-sec .game-time-col {
+    padding: 1.5em 0em;
+}
+
+.gamer-name-win-col {
+    background-image: url(../images/Timer.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5.5em;
+    width: 16em;
+    padding: 1em;
+    position: absolute;
+    top: 0.25em;
+    z-index: 99999;
+}
+
+.winwin-hero-sec .game-table-inner2x {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.gamer-name-win-col p {
+    font-family: VCRosdNEUE;
+    font-size: 2em;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+    padding-top: 0.25em;
+}
+
+.winwin-hero-sec .dd-btn-inner {
+    margin-top: 2em;
+    gap: 2em;
+}
+
+.d-btn2 {
+    background-image: url(../images/d-btn2.png);
+}
+
+.win-col-6 {
+    width: 50%;
+}
+
+.win-col-6 .hero-col-man {
+    position: relative;
+    bottom: 3em;
+}
+
+.win-col-6 .fight-man-one {
+    position: absolute;
+    bottom: 2em;
+}
+
+.win-col-6 .under-fightman {
+    margin: 0;
+    position: relative;
+    z-index: 9;
+    width: 20em;
+}
+
+.win-col-6 .hero-col-two::after {
+    bottom: -3em;
+    background-image: url(../images/red-win.png);
+    height: 20em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fail-hero-sec .hero-col-man {
+    bottom: 7em;
+}
+
+.fail-hero-sec .fight-man-one {
+    width: 100%;
+    bottom: -10em;
+}
+
+.fail-hero-sec .under-fightman {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.winwin-hero-sec .d-btn {
+    height: 2.5em;
+    width: 10em;
+}
+
+
+
+
+
+
+
+
+
+.label-mode input {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.label-mode input:checked+span {
+    background: linear-gradient(0deg, rgba(245, 60, 62, 0.3) 0%, rgba(245, 60, 62, 0) 22.12%, rgba(245, 60, 62, 0) 48.96%, rgba(245, 60, 62, 0) 81.07%, rgba(245, 60, 62, 0.3) 98%), linear-gradient(0deg, rgba(245, 60, 62, 0.3), rgba(245, 60, 62, 0.3));
+    border: 1px solid #F53C3E;
+}
+
+.label-mode {
+    width: 25%;
+}
+
+.label-mode-check {
+    position: relative;
+    width: 25%;
+}
+
+.label-mode-check input {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.label-mode-check span {
+    position: relative;
+}
+
+.label-mode-check span::after {
+    position: absolute;
+    left: 1.25em;
+    border: 1px solid red;
+    width: 1em;
+    height: 1em;
+    content: '';
+    background-size: 100% 100%;
+}
+
+.label-mode-check input:checked+span::after {
+    background-image: url(../images/tick.svg);
+}
+
+.label-mode-check input:checked+span {
+    background: linear-gradient(0deg, rgba(245, 60, 62, 0.3) 0%, rgba(245, 60, 62, 0) 22.12%, rgba(245, 60, 62, 0) 48.96%, rgba(245, 60, 62, 0) 81.07%, rgba(245, 60, 62, 0.3) 98%), linear-gradient(0deg, rgba(245, 60, 62, 0.3), rgba(245, 60, 62, 0.3));
+    border: 1px solid #F53C3E;
+}
+
+.mode-inner2x .label-mode {
+    width: 33.3333%;
+}
+
+.mode-inner3x .label-mode {
+    width: 50%;
+}

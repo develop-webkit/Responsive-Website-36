@@ -1,0 +1,171 @@
+.visible-xs {
+	display: none !important;
+}
+
+.hidden-xs {
+	display: block !important;
+}
+
+@media(max-width: 767px) {
+	.visible-xs {
+		display: block !important;
+	}
+
+	.hidden-xs {
+		display: none !important;
+	}
+	.hero-d-col,
+	.game-table-one {
+		flex-wrap: wrap;
+	}
+	.hero-d-col .d-col-6,
+	.hero-d-col .d-col-5{
+		width: 100%;
+	}
+	.main-sec {
+    font-size: 1.62vw;
+}
+	.main-sec1 {
+    font-size: 1vw;
+}
+.main-sec1 .game-table-one{
+	flex-wrap: nowrap;
+}
+.main-sec{
+	overflow: hidden;
+}
+.win-col-6 .hero-col-man {
+    margin-top: 31em;
+}
+}
+
+@media(max-width: 992px) {
+	.hero-col-one {
+		padding: 2.5em 1.75em 2.5em 2em;
+		min-height: 58.5em;
+	}
+
+	.hero-sec {
+		padding: 1.5em 2em;
+	}
+
+	.input-one input {
+		font-size: 1em;
+	}
+
+	.s-btn {
+		font-size: 1.125em;
+	}
+
+	.main-sec {
+		background-position: 65% 100%;
+	}
+
+	.winwin-hero-sec {
+		padding: 0 2em;
+	}
+
+	.winwin-hero-sec .game-table-content {
+		padding: 3em 2.875em 1.875em 2.875em;
+	}
+
+	.gamer-name-win-col {
+		top: -2.5em;
+	}
+
+	.winwin-hero-sec .game-table-one {
+		padding: 3em 0em 3em 0em;
+	}
+}
+
+@media(max-width: 767px) {
+	.d-col-6 {
+		width: 60%;
+	}
+
+	.d-col-5 {
+		width: 40%;
+	}
+
+	.hero-col-one {
+		padding: 2.5em 2.5em 2.5em 2.5em;
+		min-height: 66.75em;
+	}
+
+	.input-one label {
+		font-size: 1.25em;
+	}
+
+	.input-one input {
+		font-size: 1.25em;
+	}
+
+	.mode-col p {
+		font-size: 1.25em;
+	}
+
+	.s-btn {
+		font-size: 1.25em;
+	}
+
+	.nav-logo {
+		padding: 2em 0.875em;
+	}
+
+	.main-sec {
+		background-position: 50% 100%;
+	}
+
+	.game-time-col {
+		padding: 1.5em 2em;
+	}
+
+	.game-time-inner1x {
+		height: 5em;
+		width: 30em;
+	}
+
+	.winwin-hero-sec .game-table-inner2x {
+		width: 100%;
+	}
+
+	.winwin-hero-sec .win-col-6 {
+		width: 100%;
+	}
+
+	.winwin-hero-sec .game-table-content {
+		min-height: 40em;
+	}
+
+	.winwin-hero-sec .winwin-hero-sec .game-table-content {
+		padding: 4em 4em 4em 4em;
+	}
+
+	.winwin-hero-sec .stat-one-inner p {
+		font-size: 1.75em;
+	}
+
+	.winwin-hero-sec .stat-one-inner h6 {
+		font-size: 1.75em;
+	}
+
+	.winwin-hero-sec .stat-one-inner h6 img {
+		width: 3.5em;
+	}
+
+	.game-time-inner-percentage {
+		margin-top: 0.45em;
+	}
+
+	.winwin-hero-sec .d-btn {
+		font-size: 2.25em;
+		height: 3em;
+		width: 11em;
+	}
+	.fail-hero-sec .hero-col-man {
+    margin-top: 18em;
+}
+.nav-sec::after {
+    height: 28em;
+}
+}
